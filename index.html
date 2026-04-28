@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NEXA | Dashboard</title>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="./img/favicon/favicon.ico" />
+
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main class="container sec-center">
+      <button id="toggle-btn" class="toggle-btn">
+        <svg
+          class="icon nav-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 50 50"
+        >
+          <path
+            d="M5 8 A 2.0002 2.0002 0 1 0 5 12L45 12 A 2.0002 2.0002 0 1 0 45 8L5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27L45 27 A 2.0002 2.0002 0 1 0 45 23L5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42L45 42 A 2.0002 2.0002 0 1 0 45 38L5 38 z"
+            fill="currentColor"
+          />
+        </svg>
+      </button>
+
+      <!-- **SIDEBAR** -->
+      <aside id="sideBar" class="sidebar">
+        <div class="sidebar-up">
+          <button id="close-btn" class="close-btn">
+            <svg
+              class="icon nav-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 50 50"
+            >
+              <path
+                d="M5 8 A 2.0002 2.0002 0 1 0 5 12L45 12 A 2.0002 2.0002 0 1 0 45 8L5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27L45 27 A 2.0002 2.0002 0 1 0 45 23L5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42L45 42 A 2.0002 2.0002 0 1 0 45 38L5 38 z"
+                fill="currentColor"
+              />
+            </svg>
+          </button>
+
+          <ul class="navigation">
+            <li class="nav-link dashboard">
+              <div class="btn hover-btn"></div>
+              <svg
+                class="icon nav-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M9 2H4C2.897 2 2 2.897 2 4v7c0 1.103.897 2 2 2h5c1.103 0 2-.897 2-2V4C11 2.897 10.103 2 9 2zM20 2h-5c-1.103 0-2 .897-2 2v3c0 1.103.897 2 2 2h5c1.103 0 2-.897 2-2V4C22 2.897 21.103 2 20 2zM9 15H4c-1.103 0-2 .897-2 2v3c0 1.103.897 2 2 2h5c1.103 0 2-.897 2-2v-3C11 15.897 10.103 15 9 15zM20 11h-5c-1.103 0-2 .897-2 2v7c0 1.103.897 2 2 2h5c1.103 0 2-.897 2-2v-7C22 11.897 21.103 11 20 11z"
+                  fill="currentColor"
+                />
+              </svg>
+              <a href="index.html">Dashboard</a>
+            </li>
+
+            <li class="nav-link file-manager">
+              <div class="btn hover-btn2"></div>
+              <svg
+                class="icon nav-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 30 30"
+              >
+                <path
+                  d="M4.988 3.9909999999999997A3 3.027 0 104.988 10.045 3 3.027 0 104.988 3.9909999999999997zM10.988 14.072c.553 0 1-.447 1-1s-.447-1-1-1h-1v2H10.988zM4.064 26.018l.426-5.412c.017-.264.235-.47.498-.47h0c.263 0 .48.205.498.47l.45 5.412c.036.548.487.973 1.031.973C7.537 26.991 8 26.524 8 25.948L7.988 15.091c0-.557.448-1.009 1-1.009h1v-.01-2-.009h-6c-1.105 0-2 .904-2 2.018L2 25.948c0 .576.463 1.043 1.033 1.043C3.577 26.991 4.028 26.566 4.064 26.018zM27.012 11.991H15c-.552 0-1 .448-1 1s.448 1 1 1h12.012c.552 0 1-.448 1-1S27.564 11.991 27.012 11.991zM27.012 15.991H15c-.552 0-1 .448-1 1s.448 1 1 1h12.012c.552 0 1-.448 1-1S27.564 15.991 27.012 15.991zM11 15.991A1 1 0 1011 17.991 1 1 0 1011 15.991zM27.012 7.991H15c-.552 0-1 .448-1 1s.448 1 1 1h12.012c.552 0 1-.448 1-1S27.564 7.991 27.012 7.991zM11 7.991A1 1 0 1011 9.991 1 1 0 1011 7.991zM11 19.991A1 1 0 1011 21.991 1 1 0 1011 19.991zM11 23.991A1 1 0 1011 25.991 1 1 0 1011 23.991zM27.012 19.991H15c-.552 0-1 .448-1 1s.448 1 1 1h12.012c.552 0 1-.448 1-1S27.564 19.991 27.012 19.991zM27.012 23.991H15c-.552 0-1 .448-1 1s.448 1 1 1h12.012c.552 0 1-.448 1-1S27.564 23.991 27.012 23.991z"
+                  fill="currentColor"
+                />
+              </svg>
+              <a href="file-manager.html">File Manager</a>
+            </li>
+
+            <li class="switch">
+              <input id="checkboxInput" type="checkbox" />
+              <label class="toggle-switch" for="checkboxInput"></label>
+              <p id="switch-text">Dark Mode</p>
+            </li>
+          </ul>
+        </div>
+
+        <img src="img/user.jpg" alt="user icon" class="user" />
+      </aside>
+
+      <!-- **MAIN AREA** -->
+      <div class="main-area">
+        <!-- TOPBAR -->
+        <header class="topbar">
+          <div class="page-title"><h1>Dashboard</h1></div>
+
+          <div class="actions">
+            <div class="notification">
+              <svg
+                class="icon icon-bell"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 64 64"
+              >
+                <path
+                  d="M30 4C28.783 4 27.847531 5.0782031 28.019531 6.2832031L28.302734 8.2636719C19.853734 9.2446719 15.892578 13.6 15.892578 18C15.892578 32.747 11.747703 40.637063 11.095703 41.789062L52.195312 40.373047C50.807313 37.334047 48.107422 29.896 48.107422 18C48.107422 13.599 44.146266 9.2446719 35.697266 8.2636719L35.980469 6.2832031C36.152469 5.0782031 35.217 4 34 4L30 4 z M 8 44C8 44 4 45 4 53L26.046875 53C26.547513 55.839248 29.016871 58 32 58C34.983129 58 37.452487 55.839248 37.953125 53L60 53C60 45 56 44 56 44L8 44 z"
+                  fill="currentColor"
+                />
+              </svg>
+            </div>
+            <img src="img/user.jpg" alt="user icon" class="avatar" />
+          </div>
+        </header>
+
+        <!-- DASHBOARD CONTENT -->
+        <section class="dashboard-content">
+          <!-- cards -->
+          <div class="cards-container">
+            <div class="card total-files">
+              <p class="title">Total Files</p>
+              <img
+                src="./img/svg/file.svg"
+                alt="upload icon"
+                class="card-icon"
+              />
+              <p class="number">125</p>
+            </div>
+
+            <div class="card storage-used">
+              <p class="title">Storage Used</p>
+              <img
+                src="./img/svg/storage.svg"
+                alt="storage icon"
+                class="card-icon"
+              />
+              <p class="number">25GB / 100GB</p>
+            </div>
+
+            <div class="card active-users">
+              <p class="title">Active Users</p>
+              <img src="./img/svg/user.svg" alt="user icon" class="card-icon" />
+              <p class="number">42</p>
+            </div>
+
+            <div class="card uploads-today">
+              <p class="title">Uploads Today</p>
+              <img
+                src="./img/svg/upload-today.svg"
+                alt="uploads icon"
+                class="card-icon"
+              />
+              <p class="number">12</p>
+            </div>
+          </div>
+
+          <!-- activity -->
+          <div class="activity">
+            <div class="recent-activity">
+              <div class="activity-bar">
+                <h3>Recent Activity</h3>
+              </div>
+              <ul class="activity">
+                <li>
+                  <div class="left">
+                    <svg
+                      class="icon activity-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 1.5859375L4.5859375 9L9 9L9 15.5C9 15.872222 9.140157 16.280782 9.4296875 16.570312C9.719218 16.859844 10.127778 17 10.5 17L13.5 17C13.872222 17 14.280783 16.859844 14.570312 16.570312C14.859844 16.280782 15 15.872222 15 15.5L15 9L19.414062 9L12 1.5859375 z M 2 20L2 22L22 22L22 20L2 20 z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                    image.png uploaded
+                  </div>
+                  <span class="time-span">13h</span>
+                </li>
+                <li>
+                  <div class="left">
+                    <svg
+                      class="icon activity-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 48 48"
+                    >
+                      <path
+                        d="M20.5 4 A 1.50015 1.50015 0 0 0 19.066406 6L14.640625 6C12.796625 6 11.086453 6.9162188 10.064453 8.4492188L7.6972656 12L7.5 12 A 1.50015 1.50015 0 1 0 7.5 15L40.5 15 A 1.50015 1.50015 0 1 0 40.5 12L40.302734 12L37.935547 8.4492188C36.913547 6.9162187 35.202375 6 33.359375 6L28.933594 6 A 1.50015 1.50015 0 0 0 27.5 4L20.5 4 z M 8.9726562 18L11.125 38.085938C11.425 40.887937 13.77575 43 16.59375 43L31.40625 43C34.22325 43 36.574 40.887938 36.875 38.085938L39.027344 18L8.9726562 18 z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                    document.pdf deleted
+                  </div>
+                  <span class="time-span">12h</span>
+                </li>
+                <li>
+                  <div class="left">
+                    <svg
+                      class="icon activity-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 2C6.4886661 2 2 6.4886661 2 12C2 17.511334 6.4886661 22 12 22C12.490323 22 12.968789 21.95337 13.441406 21.884766C14.544132 23.175765 16.179371 24 18 24C21.3 24 24 21.3 24 18C24 14.7 21.3 12 18 12C14.7 12 12 14.7 12 18C12 18.694172 12.126304 19.358943 12.345703 19.980469C12.229904 19.985374 12.117036 20 12 20C7.5693339 20 4 16.430666 4 12C4 7.5693339 7.5693339 4 12 4C13.491096 4 14.878325 4.410121 16.070312 5.1171875L15.169922 6.0175781C14.806922 6.3795781 15.063172 7 15.576172 7L19.425781 7C19.742781 7 20 6.7427813 20 6.4257812L20 2.5761719C20 2.0631719 19.379578 1.8069219 19.017578 2.1699219L17.517578 3.6699219C15.934236 2.6194565 14.037589 2 12 2 z M 20.800781 15.708984C21.054031 15.708984 21.3065 15.8065 21.5 16C21.887 16.387 21.887 17.013391 21.5 17.400391L18.199219 20.699219C17.812219 21.086219 17.187781 21.086219 16.800781 20.699219L15 18.900391C14.613 18.513391 14.613 17.887 15 17.5C15.387 17.113 16.013391 17.113 16.400391 17.5L17.5 18.599609L20.099609 16C20.293109 15.8065 20.547531 15.708984 20.800781 15.708984 z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                    Settings updated
+                  </div>
+                  <span class="time-span">18h</span>
+                </li>
+                <li>
+                  <div class="left">
+                    <svg
+                      class="icon activity-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M4 4C2.9 4 2 4.9 2 6L2 18C2 19.1 2.9 20 4 20L12.080078 20C12.033078 19.673 12 19.34 12 19C12 15.134 15.134 12 19 12C20.075 12 21.09 12.250594 22 12.683594L22 8C22 6.9 21.1 6 20 6L12 6L10 4L4 4 z M 19.007812 14.015625C17.731188 14.016 16.455016 14.504969 15.478516 15.480469C14.502516 16.456469 14.009766 17.729812 14.009766 19.007812C14.009766 20.285812 14.502516 21.560156 15.478516 22.535156C17.430516 24.487156 20.583156 24.487156 22.535156 22.535156C24.487156 20.583156 24.487156 17.428562 22.535156 15.476562C21.560156 14.502563 20.284437 14.01525 19.007812 14.015625 z M 18.011719 16.001953L20.011719 16.001953L20.011719 18.001953L22.011719 18.001953L22.011719 20.001953L20.011719 20.001953L20.011719 22.001953L18.011719 22.001953L18.011719 20.001953L16.011719 20.001953L16.011719 18.001953L18.011719 18.001953L18.011719 16.001953 z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                    New Folder created
+                  </div>
+                  <span class="time-span">20h</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <img src="img/nexa-icon-light.png" alt="nexa icon" id="brand-logo" />
+      <p>
+        &copy; Copyright <span id="date"></span> | All material and intellectual rights of this
+        website belong to Elahe Hemmati. Any copying or republication of content
+        without mentioning the source and obtaining written permission is
+        prohibited.
+      </p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

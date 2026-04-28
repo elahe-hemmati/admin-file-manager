@@ -1,0 +1,110 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as mix;
+
+// btn style
+.btn {
+    @include mix.glass();
+    @include mix.btn();
+    font-size: clamp(12px, 2.5vw, 16px);
+}
+
+// toggle sidebar
+.toggle-btn,
+.close-btn {
+    background: none;
+    border: none;
+}
+
+@keyframes toggle-btn {
+    0% {
+        transform: translateX(0px);
+    }
+
+    15% {
+        transform: translateX(2px);
+    }
+
+    30% {
+        transform: translateX(-2px);
+    }
+
+    45% {
+        transform: translateX(0px);
+    }
+
+    60% {
+        transform: translateY(2px);
+    }
+
+    75% {
+        transform: translateY(-2px);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.toggle-btn {
+    display: inline-block;
+    top: 20px;
+    left: 20px;
+    position: absolute;
+    cursor: pointer;
+    animation: toggle-btn 4s infinite;
+
+}
+
+@media (min-width: 62rem) {
+
+    .toggle-btn,
+    .close-btn {
+        display: none;
+    }
+}
+
+// sidebar btn slide size
+.hover-btn {
+    @include mix.hover-btn-style(85%);
+}
+
+.hover-btn2 {
+    @include mix.hover-btn-style(85%);
+}
+
+// toggle switch
+#checkboxInput {
+    display: none;
+}
+
+.toggle-switch {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    background: $clr-secondary;
+    border-radius: $radius;
+    cursor: pointer;
+    transition-duration: .3s;
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        left: 0;
+        background: conic-gradient($clr-neutral, $clr-light, $clr-neutral, $clr-light, $clr-neutral);
+        box-shadow: $switch-btn-shadow;
+        border-radius: 50%;
+        transition-duration: .3s;
+    }
+
+    #checkboxInput:checked+& {
+        background: $clr-primary;
+        transition-duration: .3s;
+    }
+
+    #checkboxInput:checked+&::after {
+        transform: translateX(100%);
+        transition-duration: .3s;
+    }
+}

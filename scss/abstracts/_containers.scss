@@ -1,0 +1,26 @@
+@use 'variables' as *;
+@use 'mixins' as mix;
+
+.container {
+    padding: 4rem 0;
+    width: 85vw;
+    margin: 0 auto;
+    max-width: 75rem;
+    position: relative;
+}
+
+@media (min-width: 62rem) {
+    .container {
+        width: 95vw;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        gap: 1rem;
+    }
+}
+
+.main-area {
+    @include mix.flex(column, space-between);
+    @include mix.glass();
+    border-radius: $radius;
+    box-shadow: none;
+}

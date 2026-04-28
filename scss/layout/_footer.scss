@@ -1,0 +1,13 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as mix;
+
+.footer {
+    text-align: center;
+    backdrop-filter: $glss-blur;
+    padding: 0.5rem 2rem;
+
+    #brand-logo {
+        @include mix.img-size(90px, 120px);
+        padding-bottom: 10px;
+    }
+}

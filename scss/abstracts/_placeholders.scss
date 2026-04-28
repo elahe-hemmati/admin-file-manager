@@ -1,0 +1,11 @@
+@use 'mixins' as mix;
+
+%user {
+    @include mix.img-size(40px, 40px);
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+
+    &:hover {
+          transform: scale(1.05) rotate(3deg);
+    }
+}

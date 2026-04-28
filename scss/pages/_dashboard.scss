@@ -1,0 +1,80 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as mix;
+@use '../abstracts/containers' as *;
+
+.dashboard-content {
+    @include mix.flex(column, space-between);
+    gap: 1rem;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-self: center;
+    gap: 1rem 6rem;
+    padding: $padding-card;
+
+    @media (min-width: 50rem) {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.card {
+    @include mix.glass();
+    @include mix.card();
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+    .title {
+        align-self: center;
+        justify-self: start;
+    }
+
+    .card-icon {
+        align-self: center;
+        justify-self: end;
+        @include mix.img-size(60px, 60px);
+    }
+
+    .number {
+        align-self: center;
+        justify-self: start;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+}
+
+.recent-activity {
+    @include mix.glass();
+    @include mix.card();
+    padding: $padding-sidebar;
+}
+
+.activity-bar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.activity {
+    li {
+        @include mix.flex(row, space-between, center);
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 25px;
+        border-bottom: 1px dotted $clr-secondary;
+
+        span {
+            color: $clr-secondary;
+            transition: color 0.3s;
+        }
+    }
+}
+
+.left {
+    display: flex;
+    gap: 1rem;
+}
+
+.activity-icon {
+    @include mix.img-size(25px, 25px);
+}

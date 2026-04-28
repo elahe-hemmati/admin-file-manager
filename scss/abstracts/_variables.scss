@@ -1,0 +1,54 @@
+// colors
+$clr-primary: #a7e0e4;
+$clr-secondary: #648484;
+$clr-light: #feffef;
+$clr-dark: #192d31;
+$clr-neutral: #686868;
+
+// background
+$bg-img: url(../img/body-light.jpg) center/cover no-repeat fixed;
+$bg-img-dark: url(../img/body-dark.jpg) center/cover no-repeat fixed;
+
+// glassmorphism cards
+$glss-bg: #a7e0e433;
+$glss-blur: blur(15px);
+$glss-border: 1px solid #ffffff4d;
+$glss-shdow-outset: 0 8px 32px #0000001a;
+$glss-shdow-inset-top: inset 0 1px 0 #ffffff80;
+$glss-shdow-inset-bottom: inset 0 -1px 0 #ffffff1a;
+$glss-shdow-inset-glow: inset 0 0 4px 2px #ffffff33;
+$glss-horizontal: linear-gradient(90deg,
+        transparent,
+        #fffffff9,
+        transparent);
+$glss-vertical: linear-gradient(180deg,
+        #fffffff9,
+        transparent,
+        #ffffff4d);
+
+// glassmorphism btn
+$glss-btn: #a7e0e4a3;
+$glss-shdow-inset-glow-hover: inset 0 0 4px 2px #f0fafbc6;
+$switch-btn-shadow: 5px 2px 7px rgba(8, 8, 8, 0.308);
+
+// topbar bg color
+$topbar-bg: #e4e4e420;
+
+// paddings
+$padding-card: 25px 20px;
+$padding-sidebar: 35px 30px;
+$padding-btn: 0.5rem 1rem;
+$padding-bar: 15px 30px;
+
+// spacing & shapes
+$radius: 30px;
+
+// font
+$fornt-family: 'Inter', sans-serif;
+$font-size: clamp(0.95rem, 0.8rem + 0.5vw, 1.1rem);
+$fs-1: clamp(1.8rem, 2.5vw, 2.8rem);
+$fs-2: clamp(1.4rem, 2vw, 2rem);
+$fs-3: clamp(1.2rem, 1.5vw, 1.6rem);
+
+// animation
+$transition: all 0.3s linear;

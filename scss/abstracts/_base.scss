@@ -1,0 +1,64 @@
+@use '../abstracts/variables' as *;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: $bg-img;
+    color: $clr-dark;
+    --icon-color: #{$clr-secondary};
+    transition: $transition;
+    
+    &.dark {
+        background: $bg-img-dark;
+        color: $clr-light;
+        --icon-color: #{$clr-primary};
+        transition: $transition;
+
+        a {
+            text-decoration: none;
+            color: $clr-light;
+            display: inline-block;
+            cursor: pointer;
+
+            &:hover {
+                color: $clr-primary;
+            }
+        }
+
+        .time-span {
+            color: $clr-primary;
+        }
+    }
+}
+
+.icon path {
+    fill: var(--icon-color);
+    transition: fill 0.3s;
+}
+
+a {
+    text-decoration: none;
+    color: $clr-dark;
+    display: inline-block;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.8;
+        color: $clr-light;
+    }
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    width: 100%;
+    display: inline-block;
+    object-fit: cover;
+}

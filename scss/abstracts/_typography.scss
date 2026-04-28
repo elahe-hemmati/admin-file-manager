@@ -1,0 +1,10 @@
+// main.scss
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as mix;
+
+body {
+    font-family: $fornt-family;
+    font-size: $font-size;
+    line-height: 1.5;
+    user-select: none;
+}

@@ -1,0 +1,63 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as mix;
+@use '../abstracts/placeholders' as *;
+
+.topbar {
+    @include mix.flex(row, space-between, center);
+    gap: 1rem;
+    padding: $padding-bar;
+    background-color: $topbar-bg;
+    backdrop-filter: $glss-blur;
+    flex-wrap: wrap
+}
+
+.actions {
+    @include mix.flex(row, space-between);
+    gap: 1rem;
+}
+
+// bell
+@keyframes bell-shake {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    15% {
+        transform: rotate(15deg);
+    }
+
+    30% {
+        transform: rotate(-10deg);
+    }
+
+    45% {
+        transform: rotate(10deg);
+    }
+
+    60% {
+        transform: rotate(-5deg);
+    }
+
+    75% {
+        transform: rotate(5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.notification {
+    display: inline-block;
+    cursor: pointer;
+    align-self: center;
+    @include mix.img-size(25px, 25px);
+
+    &:hover .icon-bell {
+        animation: bell-shake 0.5s ease-in-out;
+    }
+}
+
+.avatar {
+    @extend %user;
+}

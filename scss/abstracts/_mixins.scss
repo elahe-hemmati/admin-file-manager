@@ -1,0 +1,88 @@
+@use '../abstracts/variables' as *;
+
+// glass card
+@mixin glass() {
+    text-align: center;
+    backdrop-filter: $glss-blur;
+    -webkit-backdrop-filter: $glss-blur;
+    border-radius: $radius;
+    border: $glss-border;
+    box-shadow:
+        $glss-shdow-outset,
+        $glss-shdow-inset-top,
+        $glss-shdow-inset-bottom,
+        $glss-shdow-inset-glow;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: $glss-horizontal;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1px;
+        height: 100%;
+        background: $glss-vertical;
+    }
+}
+
+// cards
+@mixin card() {
+    padding: $padding-card;
+    background: $glss-bg;
+}
+
+// btn
+@mixin btn() {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: $transition;
+    background: $glss-btn;
+    padding: $padding-btn;
+
+    &:hover {
+        box-shadow:
+            $glss-shdow-outset,
+            $glss-shdow-inset-top,
+            $glss-shdow-inset-bottom,
+            $glss-shdow-inset-glow-hover;
+    }
+}
+
+
+@mixin hover-btn-style($w) {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.25s ease, right 0.25s ease;
+    transform: translateY(-50%);
+    top: 50%;
+    right: -100px;
+    width: $w;
+    height: 40px;
+    pointer-events: none;
+}
+
+// flex
+@mixin flex($direction: row, $justify: flex-start, $align: stretch) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+// img
+@mixin img-size($width, $height) {
+    width: $width;
+    height: $height;
+}
