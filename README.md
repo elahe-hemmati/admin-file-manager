@@ -1,6 +1,5 @@
 # Admin File Manager UI
-**🔗 Live Demo:** https://elahe-hemmati.github.io/admin-file-manager
-
+> **[🔗 Live Demo / دموی زنده](https://elahe-hemmati.github.io/admin-file-manager)**
 ## English
 
 A glassmorphism admin file manager UI with modular Sass architecture. This portfolio project demonstrates responsive design, advanced theming (dark/light mode), and modern front-end development practices.
@@ -54,8 +53,7 @@ cd admin-file-manager
 | ![](./img/screenshot/screenshot-3.png) | ![](./img/screenshot/screenshot-4.png) |
 
 ### Contact
-
-Elahe Hemmati – https://github.com/elahe-hemmati – elahe.ali.hemmati@gmail.com
+Elahe Hemmati – [GitHub](https://github.com/elahe-hemmati) – elahe.ali.hemmati@gmail.com
 
 ---
 ## فارسی
@@ -113,5 +111,4 @@ cd admin-file-manager
 | ![](./img/screenshot/screenshot-3.png) | ![](./img/screenshot/screenshot-4.png) |
 
 ### ارتباط با من
-
-الهه همتی – https://github.com/elahe-hemmati – elahe.ali.hemmati@gmail.com
+الهه همتی – [GitHub](https://github.com/elahe-hemmati) – elahe.ali.hemmati@gmail.com
